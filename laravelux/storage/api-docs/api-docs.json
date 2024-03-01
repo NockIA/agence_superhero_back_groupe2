@@ -1,0 +1,789 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "API projet Ynov laravel",
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/api/login": {
+            "post": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "login",
+                "operationId": "99539a8e18179644cbac3165cf994fe5",
+                "responses": {
+                    "200": {
+                        "description": "token"
+                    }
+                }
+            }
+        },
+        "/api/logout": {
+            "post": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "logout",
+                "operationId": "84c346b5fbf89662322f7b60466d3011",
+                "responses": {
+                    "200": {
+                        "description": "message => Successfully logged out"
+                    }
+                }
+            }
+        },
+        "/api/city": {
+            "get": {
+                "tags": [
+                    "City"
+                ],
+                "summary": "get all city",
+                "operationId": "493138e47d3fef552ef6320d2d713796",
+                "responses": {
+                    "200": {
+                        "description": "all data for city"
+                    }
+                }
+            }
+        },
+        "/api/getOneCity/{id}": {
+            "get": {
+                "tags": [
+                    "City"
+                ],
+                "summary": "get one city info",
+                "operationId": "d64646c30605ece1da3d4dfdd1848bb3",
+                "responses": {
+                    "200": {
+                        "description": "all data from one city"
+                    }
+                }
+            }
+        },
+        "/api/linkCityToHero": {
+            "post": {
+                "tags": [
+                    "City"
+                ],
+                "summary": "add a link between hero and city",
+                "operationId": "703586be41c3911435ecc5db888ce382",
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/api/addCity": {
+            "post": {
+                "tags": [
+                    "City"
+                ],
+                "summary": "add city to database",
+                "operationId": "fc9c09bba7a128e246a8c7618175f027",
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/api/City/{id}": {
+            "delete": {
+                "tags": [
+                    "City"
+                ],
+                "summary": "suprr city by id",
+                "operationId": "d51b841d1b521ea27f0753ea3f89fa43",
+                "responses": {
+                    "201": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/api/updateCity": {
+            "put": {
+                "tags": [
+                    "City"
+                ],
+                "summary": "update a city in database",
+                "operationId": "c91ab2db459b9a6d8907fd1c37fcfb53",
+                "responses": {
+                    "201": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/api/": {
+            "get": {
+                "tags": [
+                    "Documentation"
+                ],
+                "summary": "get all routes info",
+                "operationId": "6f79bead1ac958f1e68574479e0796bb",
+                "responses": {
+                    "200": {
+                        "description": "all routes"
+                    }
+                }
+            }
+        },
+        "/api/gadgets": {
+            "get": {
+                "tags": [
+                    "Gadget"
+                ],
+                "summary": "get all gadgets info",
+                "operationId": "d0dca31d9971bea158d56aa53c6cf246",
+                "responses": {
+                    "200": {
+                        "description": "all data from gadgets"
+                    }
+                }
+            }
+        },
+        "/getOneGadget/{id}": {
+            "get": {
+                "tags": [
+                    "Gadget"
+                ],
+                "summary": "get one gadget info",
+                "operationId": "64b9465975c770b0febb07547bb27d40",
+                "responses": {
+                    "200": {
+                        "description": "all data from one gadget"
+                    }
+                }
+            }
+        },
+        "/api/linkGadgetToHero": {
+            "post": {
+                "tags": [
+                    "Gadget"
+                ],
+                "summary": "add a link between hero and gadget",
+                "operationId": "9bd0b708d74b39c519e550ba8e2f2c91",
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/api/addGadget": {
+            "post": {
+                "tags": [
+                    "Gadget"
+                ],
+                "summary": "add gadget to database",
+                "operationId": "d36f65b6b6a0ab71eb26d238976009c0",
+                "responses": {
+                    "201": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/api/gadget/{id}": {
+            "delete": {
+                "tags": [
+                    "Gadget"
+                ],
+                "summary": "suprr gadget by id",
+                "operationId": "cb1526ee3a4c00809264d0dfc19ee9b8",
+                "responses": {
+                    "201": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/api/updateGadget": {
+            "put": {
+                "tags": [
+                    "Gadget"
+                ],
+                "summary": "update a gadget in database",
+                "operationId": "0d3996c464b2bef36ec14783f344f97a",
+                "responses": {
+                    "201": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/api/plannets": {
+            "get": {
+                "tags": [
+                    "Plannet"
+                ],
+                "summary": "get all gadgets info",
+                "operationId": "6b782814d89ee68c93dab462035e1fc0",
+                "responses": {
+                    "200": {
+                        "description": "all data from plannets"
+                    }
+                }
+            }
+        },
+        "/getOnePlannet/{id}": {
+            "get": {
+                "tags": [
+                    "Plannet"
+                ],
+                "summary": "get one plannet info",
+                "operationId": "01a1e5ac6cf4c08a205a68f1c4b8c791",
+                "responses": {
+                    "200": {
+                        "description": "all data from one plannet"
+                    }
+                }
+            }
+        },
+        "/api/addPlannet": {
+            "post": {
+                "tags": [
+                    "Plannet"
+                ],
+                "summary": "add plannet to database",
+                "operationId": "cecd0f128e360784eb4212edf193541d",
+                "responses": {
+                    "201": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/api/plannet/{id}": {
+            "delete": {
+                "tags": [
+                    "Plannet"
+                ],
+                "summary": "suprr plannet by id",
+                "operationId": "920bb2745a6cc8e6ec930ff7ec7130e2",
+                "responses": {
+                    "201": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/api/updatePlannet": {
+            "put": {
+                "tags": [
+                    "Plannet"
+                ],
+                "summary": "update a plannet in database",
+                "operationId": "35a4437e009538f19c00f180d72f5def",
+                "responses": {
+                    "201": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/api/powers": {
+            "get": {
+                "tags": [
+                    "Power"
+                ],
+                "summary": "get all powers info",
+                "operationId": "c6fb98e6e26bcd2442660272e092858a",
+                "responses": {
+                    "200": {
+                        "description": "all data from powers"
+                    }
+                }
+            }
+        },
+        "/api/getOnePower/{id}": {
+            "get": {
+                "tags": [
+                    "Power"
+                ],
+                "summary": "get one power info",
+                "operationId": "3c24c1ffbde65b2229380eef72bbfc24",
+                "responses": {
+                    "200": {
+                        "description": "all data from one power"
+                    }
+                }
+            }
+        },
+        "/api/linkPowerToHero": {
+            "post": {
+                "tags": [
+                    "Power"
+                ],
+                "summary": "add a link between hero and power",
+                "operationId": "5fe2a76f1612d32f0216c6a0934ae6b1",
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/api/addPower": {
+            "post": {
+                "tags": [
+                    "Power"
+                ],
+                "summary": "add power to database",
+                "operationId": "4a874d43095e3168d9daafd51b77bc68",
+                "responses": {
+                    "201": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/api/power/{id}": {
+            "delete": {
+                "tags": [
+                    "Power"
+                ],
+                "summary": "suprr power by id",
+                "operationId": "ee30476da2108582f3571ac41409024e",
+                "responses": {
+                    "201": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/api/updatePower": {
+            "put": {
+                "tags": [
+                    "Power"
+                ],
+                "summary": "update a power in database",
+                "operationId": "425352bcb4402cad7bc6480ac91f020e",
+                "responses": {
+                    "201": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/api/teams": {
+            "get": {
+                "tags": [
+                    "Teams"
+                ],
+                "summary": "get all teams info",
+                "operationId": "28b728873a4e4f26e74cd84f4c4259c5",
+                "responses": {
+                    "200": {
+                        "description": "all data from teams"
+                    }
+                }
+            }
+        },
+        "/api/getOneTeam/{id}": {
+            "get": {
+                "tags": [
+                    "Teams"
+                ],
+                "summary": "get one team info",
+                "operationId": "955210c546366d9eb415fe324258ba3b",
+                "responses": {
+                    "200": {
+                        "description": "all data from one team"
+                    }
+                }
+            }
+        },
+        "/api/addTeam": {
+            "post": {
+                "tags": [
+                    "Teams"
+                ],
+                "summary": "add team to database",
+                "operationId": "a4ea96e552309f31498ee6700de1760f",
+                "responses": {
+                    "201": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/api/team/{id}": {
+            "delete": {
+                "tags": [
+                    "Teams"
+                ],
+                "summary": "suprr team by id",
+                "operationId": "eaa58cfa84ec8037b51965e97db601a6",
+                "responses": {
+                    "201": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/api/updateTeam": {
+            "put": {
+                "tags": [
+                    "Teams"
+                ],
+                "summary": "update a team in database",
+                "operationId": "1808f1de759841829c6462d24ddfd45f",
+                "responses": {
+                    "201": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/api/users": {
+            "get": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "get all users info",
+                "operationId": "1ad1cf4ffbfc84b02284335bdd828008",
+                "responses": {
+                    "200": {
+                        "description": "all data from users"
+                    }
+                }
+            }
+        },
+        "/api/getOneUser/{id}": {
+            "get": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "get one user info",
+                "operationId": "e6cc012943de5bc0b160389e5fd9d6d0",
+                "responses": {
+                    "200": {
+                        "description": "all data from one user"
+                    }
+                }
+            }
+        },
+        "/api/getMyInfo": {
+            "get": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "get my user info",
+                "operationId": "18c7f066da6efc371204a42a1ce99e34",
+                "responses": {
+                    "200": {
+                        "description": "all data from my user account"
+                    }
+                }
+            }
+        },
+        "/api/register": {
+            "post": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "add user to database",
+                "operationId": "739d65077b36909e55dc4554bf589021",
+                "responses": {
+                    "201": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/api/user/{id}": {
+            "delete": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "suprr user by id",
+                "operationId": "86df13cf1f85c547a30fc0516e7e6f63",
+                "responses": {
+                    "201": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/api/deleteMyAccount": {
+            "delete": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "suprr my account",
+                "operationId": "1c866073eb384333b52755774abae5f2",
+                "responses": {
+                    "201": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/api/updateMyAccountEmail": {
+            "put": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "update user email in database",
+                "operationId": "407571f09e1fb91f8bd87877a925af52",
+                "responses": {
+                    "201": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/api/updateMyAccountFirstName": {
+            "put": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "update user firstname in database",
+                "operationId": "47c15fde9a5660553e115ec9d42cc228",
+                "responses": {
+                    "201": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/api/updateMyAccountLastName": {
+            "put": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "update user last name in database",
+                "operationId": "5cdfbc4186b33ad4e2b68fd1c2092c10",
+                "responses": {
+                    "201": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/api/updateMyAccountPassword": {
+            "put": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "update user password in database",
+                "operationId": "6b00057c7555ba6a438908cff8463744",
+                "responses": {
+                    "201": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/api/updateMyAccountImage": {
+            "put": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "update user image in database",
+                "operationId": "435b9cafa937f82256fb34c4ab1c7ee5",
+                "responses": {
+                    "201": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/api/vehicles": {
+            "get": {
+                "tags": [
+                    "Vehicle"
+                ],
+                "summary": "get all vehicles info",
+                "operationId": "2b750e5c9cd930e650df6828270bfca0",
+                "responses": {
+                    "200": {
+                        "description": "all data from vehicles"
+                    }
+                }
+            }
+        },
+        "/api/getOneVehicle/{id}": {
+            "get": {
+                "tags": [
+                    "Vehicle"
+                ],
+                "summary": "get one vehicle info",
+                "operationId": "c7a5072440a0288f13b4f3de0405d8f3",
+                "responses": {
+                    "200": {
+                        "description": "all data from one vehicle"
+                    }
+                }
+            }
+        },
+        "/api/addVehicle": {
+            "post": {
+                "tags": [
+                    "Vehicle"
+                ],
+                "summary": "add vehicle to database",
+                "operationId": "ed8d0e2c5e8d4c2abaf06662474969ab",
+                "responses": {
+                    "201": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/api/vehicle/{id}": {
+            "delete": {
+                "tags": [
+                    "Vehicle"
+                ],
+                "summary": "suprr a vehicle by id",
+                "operationId": "ad7d92b46e6c196254e2961d2cd716db",
+                "responses": {
+                    "201": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/api/updateVehicle": {
+            "put": {
+                "tags": [
+                    "Vehicle"
+                ],
+                "summary": "update a vehicle in database",
+                "operationId": "381ed195ebf4dbb4bd09e2aafefcad42",
+                "responses": {
+                    "201": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/api/allHeros": {
+            "get": {
+                "tags": [
+                    "Hero"
+                ],
+                "summary": "get all heros info",
+                "operationId": "fd4ad432e92d30d0fc942ee16a18408c",
+                "responses": {
+                    "200": {
+                        "description": "all data from heros"
+                    }
+                }
+            }
+        },
+        "/api/getOneHero/{uuid}": {
+            "get": {
+                "tags": [
+                    "Hero"
+                ],
+                "summary": "get one hero info",
+                "operationId": "8191aedf943bc29850237cbdb4e3d784",
+                "responses": {
+                    "200": {
+                        "description": "all data from one heros"
+                    }
+                }
+            }
+        },
+        "/api/getAllHeroOfOneTeams/{uuid}": {
+            "get": {
+                "tags": [
+                    "Hero"
+                ],
+                "summary": "get all heros info from team uuid",
+                "operationId": "c82d2852a3e25f7a7eca3ce452ea8568",
+                "responses": {
+                    "200": {
+                        "description": "all data from heros from team uuid"
+                    }
+                }
+            }
+        },
+        "/api/addHero": {
+            "post": {
+                "tags": [
+                    "Hero"
+                ],
+                "summary": "add hero to database",
+                "operationId": "5cbd0e44cb8cbb5b7be9b8c3990e48e5",
+                "responses": {
+                    "201": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/api/hero/{id}": {
+            "delete": {
+                "tags": [
+                    "Hero"
+                ],
+                "summary": "suprr power by id",
+                "operationId": "64fc90f40b610a63bdec1f0330fd252e",
+                "responses": {
+                    "201": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/api/updateHero": {
+            "put": {
+                "tags": [
+                    "Hero"
+                ],
+                "summary": "update a hero in database",
+                "operationId": "a600b87035ee7f2cfb8c30259e2852cd",
+                "responses": {
+                    "201": {
+                        "description": ""
+                    }
+                }
+            }
+        }
+    },
+    "tags": [
+        {
+            "name": "City",
+            "description": "all routes related to cities management"
+        },
+        {
+            "name": "Documentation",
+            "description": ""
+        },
+        {
+            "name": "Gadget",
+            "description": "all routes related to gadgets management"
+        },
+        {
+            "name": "Plannet",
+            "description": "all routes related to plannets management"
+        },
+        {
+            "name": "Power",
+            "description": "all routes related to powers management"
+        },
+        {
+            "name": "Teams",
+            "description": "all routes related to teams management"
+        },
+        {
+            "name": "User",
+            "description": "all routes related to user management"
+        },
+        {
+            "name": "Vehicle",
+            "description": "all routes related to vehicles management"
+        },
+        {
+            "name": "Hero",
+            "description": "all routes related to hero management"
+        }
+    ]
+}
