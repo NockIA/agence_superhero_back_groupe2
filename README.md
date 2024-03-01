@@ -28,7 +28,7 @@ Projet scolaire visant à créer un site type "Wikipedia" permettant à l'utilis
  - Laravel
  - SQLite
 ### Membres
- - Lucas B (Back-end)   
- - Kevin C (Front-end)  
+ - [Lucas B](https://github.com/Ylucasb) (Back-end)   
+ - [Kevin C](https://github.com/NockIA) (Front-end)  
  -  Dorian M (Database)
 
